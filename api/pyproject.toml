@@ -1,0 +1,29 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "bang007112345", email = "bang007112345@gmail.com"},
+]
+dependencies = [
+    "fastapi>=0.112.2",
+    "uvicorn>=0.30.6",
+    "google-generativeai>=0.7.2",
+    "langchain-google-genai>=1.0.10",
+    "dotenv>=0.0.5",
+    "langchain>=0.2.15",
+    "langchain-community>=0.2.15",
+    "langchain-huggingface>=0.0.3",
+    "langchain-elasticsearch>=0.2.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
